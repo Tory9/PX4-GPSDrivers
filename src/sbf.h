@@ -86,6 +86,9 @@
 /* RTK Auto */
 #define SBF_CONFIG_RTCM_SURVEY_IN "setPVTMode, Static, All, auto\n"
 
+/* RTK Moving Base */
+#define SBF_CONFIG_RTCM_MOVING_BASE " setPVTMode, Rover, StandAlone\n"
+
 /* Status */
 #define SBF_CONFIG_RTCM_STATUS "setSBFOutput, Stream1, USB1, +PVTGeodetic, msec500\n"
 

@@ -244,6 +244,10 @@ int GPSDriverSBF::configure(unsigned &baudrate, const GPSConfig &config)
 			sendMessageAndWaitForAck(SBF_CONFIG_RTCM_STATIC2, SBF_CONFIG_TIMEOUT);
 			break;
 
+		case(BaseSettingsType::moving_base):
+			sendMessageAndWaitForAck(SBF_CONFIG_RTCM_MOVING_BASE, SBF_CONFIG_TIMEOUT);
+			break;
+
 		case(BaseSettingsType::survey_in):
 		default:
 			sendMessageAndWaitForAck(SBF_CONFIG_RTCM_SURVEY_IN, SBF_CONFIG_TIMEOUT);

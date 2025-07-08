@@ -88,7 +88,8 @@ protected:
 
 	enum class BaseSettingsType : uint8_t {
 		survey_in,
-		fixed_position
+		fixed_position,
+		moving_base
 	};
 	struct SurveyInSettings {
 		uint32_t acc_limit;
